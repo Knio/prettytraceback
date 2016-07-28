@@ -1,0 +1,2 @@
+import prettytraceback
+prettytraceback.main()
