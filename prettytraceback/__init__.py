@@ -1,6 +1,5 @@
-from _version import version
+from ._version import version
 
-import os
 import sys
 import site
 
@@ -50,13 +49,11 @@ def uninstall():
 
 
 def set_hook():
-    pass
-    # import cgitb
-    # cgitb.enable(format='text')
-
     import sys
     from IPython.core import ultratb
     sys.excepthook = ultratb.VerboseTB()
+
+enable = set_hook
 
 
 def main():
